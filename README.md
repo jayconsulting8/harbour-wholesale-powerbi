@@ -75,7 +75,7 @@ Budget and expense measures only show when no state is selected, because budget 
 
 **Sales and profit**
 
-- Revenue was $2.7M over two years with a healthy gross margin of 28.35%.
+- Revenue was $2.7M over two years with a healthy gross margin of 28.3%.
 - The business made a net loss of about $3.0M. Wages ($2.7M) are about the same as total revenue and make up 73% of all operating expenses.
 - Revenue was 42.8% below budget ($2.7M against $4.7M).
 - Office Supplies is the only category ahead of budget (+33.8%). Beverages is furthest behind (-78.0%), which suggests its budget may have been set too high.
@@ -86,14 +86,15 @@ Budget and expense measures only show when no state is selected, because budget 
 - Customers owed $236.7K, and $86.5K of that (over a third) was more than 90 days old.
 - Only 26% of payments were made on time, and customers paid on average 10 days after their terms.
 - DSO was 69 days, against payment terms of mostly 14 to 45 days.
-- Customers who did pay took about 32 days on average, but DSO was much higher. This shows the main problem is old debts that are not being paid at all, not just slow payers.
-- The six slowest customers pay 50 to 58 days after their terms and have never paid on time. They are the first priority for collection.
+- Customers who did pay took about 44 days on average, but DSO was much higher (69 days). This shows the main problem is old debts that are not being paid at all, not just slow payers.
+- The six slowest customers pay 52 to 58 days after their terms and have never paid on time. They are the first priority for collection.
 
 ## Data quality checks
 
 - Checked that every payment matched an invoice (all did).
 - Checked the large wages figure against the source data: 72 unique journal entries, three departments each month, no duplicates. The number is real.
 - Compared report totals with the source data before trusting them.
+- Checked average days to pay in SQL Server against the Power BI measure. Both gave 43.9 days, and no invoice was paid in more than one payment, so the figure is the same per payment and per invoice.
 
 ## What I learned
 
